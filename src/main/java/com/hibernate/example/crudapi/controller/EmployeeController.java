@@ -1,26 +1,22 @@
-package com.rbbn.hibernate.example.crudapi.controller;
+package com.hibernate.example.crudapi.controller;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.rbbn.hibernate.example.crudapi.dao.EmployeeSearch;
+import com.hibernate.example.crudapi.model.Employee;
+import com.hibernate.example.crudapi.service.EmployeeService;
+import com.hibernate.example.crudapi.dao.EmployeeSearch;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.rbbn.hibernate.example.crudapi.model.Employee;
-import com.rbbn.hibernate.example.crudapi.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api")
 public class EmployeeController {
 	
 	@Autowired
-	private EmployeeService  employeeService;
+	private EmployeeService employeeService;
 
 	@Autowired
 	private EmployeeSearch empSearch;

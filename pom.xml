@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<start-class>com.rbbn.hibernate.example.crudapi.CrudapiApplication</start-class>
+		<start-class>com.hibernate.example.crudapi.CrudapiApplication</start-class>
 	</properties>
 
 	<dependencies>

@@ -1,4 +1,4 @@
-package com.rbbn.hibernate.example.crudapi;
+package com.hibernate.example.crudapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

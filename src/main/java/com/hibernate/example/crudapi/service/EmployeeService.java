@@ -1,8 +1,8 @@
-package com.rbbn.hibernate.example.crudapi.service;
+package com.hibernate.example.crudapi.service;
 
 import java.util.List;
 
-import com.rbbn.hibernate.example.crudapi.model.Employee;
+import com.hibernate.example.crudapi.model.Employee;
 
 public interface EmployeeService {
 	

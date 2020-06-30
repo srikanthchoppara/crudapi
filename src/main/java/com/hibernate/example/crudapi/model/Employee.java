@@ -1,4 +1,4 @@
-package com.rbbn.hibernate.example.crudapi.model;
+package com.hibernate.example.crudapi.model;
 
 import lombok.Getter;
 import lombok.Setter;

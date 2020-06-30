@@ -1,7 +1,7 @@
-package com.rbbn.hibernate.example.crudapi.service;
+package com.hibernate.example.crudapi.service;
 
-import com.rbbn.hibernate.example.crudapi.dao.EmployeeDAO;
-import com.rbbn.hibernate.example.crudapi.model.Employee;
+import com.hibernate.example.crudapi.dao.EmployeeDAO;
+import com.hibernate.example.crudapi.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

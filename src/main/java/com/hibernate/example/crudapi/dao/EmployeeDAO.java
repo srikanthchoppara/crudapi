@@ -1,6 +1,6 @@
-package com.rbbn.hibernate.example.crudapi.dao;
+package com.hibernate.example.crudapi.dao;
 
-import com.rbbn.hibernate.example.crudapi.model.Employee;
+import com.hibernate.example.crudapi.model.Employee;
 
 import java.util.List;
 

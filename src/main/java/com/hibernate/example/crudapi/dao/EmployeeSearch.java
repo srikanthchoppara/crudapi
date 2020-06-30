@@ -1,6 +1,6 @@
-package com.rbbn.hibernate.example.crudapi.dao;
+package com.hibernate.example.crudapi.dao;
 
-import com.rbbn.hibernate.example.crudapi.model.Employee;
+import com.hibernate.example.crudapi.model.Employee;
 import org.hibernate.search.engine.search.query.SearchResult;
 import org.hibernate.search.mapper.orm.Search;
 import org.hibernate.search.mapper.orm.massindexing.MassIndexer;
@@ -8,7 +8,6 @@ import org.hibernate.search.mapper.orm.session.SearchSession;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;

@@ -32,6 +32,6 @@ public class CustomLayoutStrategy implements IndexLayoutStrategy {
     @Override
     public String extractUniqueKeyFromElasticsearchIndexName(
             String elasticsearchIndexName) {
-        return "tbl_employee-001";
+        return "tbl_employee";
     }
 }

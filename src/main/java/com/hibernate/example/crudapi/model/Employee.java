@@ -2,8 +2,8 @@ package com.hibernate.example.crudapi.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
+import org.springframework.data.elasticsearch.annotations.Field;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -18,19 +18,19 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column
-	@GenericField
-	private Integer id;
+	@Field
+	private long id;
 	@Column
-	@GenericField
+	@Field
 	private String name;
 	@Column
-	@GenericField
+	@Field
 	private String gender;
 	@Column
-	@GenericField
+	@Field
 	private String department;
 	@Column
-	@GenericField
+	@Field
 	private String dob;
 
 	public Employee(int id, String name, String department, String gender, String dob) {

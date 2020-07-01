@@ -8,6 +8,7 @@ import org.hibernate.search.mapper.orm.session.SearchSession;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
@@ -21,6 +22,7 @@ public class EmployeeSearch {
 
 	private static boolean isAlreadyIndexed = false;
 
+	@PostConstruct
 	public void init() {
 		if(!isAlreadyIndexed) {
 			SearchSession searchSession = Search.session(entityManager);

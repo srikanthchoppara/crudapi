@@ -20,7 +20,7 @@ public class CustomLayoutStrategy implements IndexLayoutStrategy {
 
     @Override
     public String createReadAlias(String hibernateSearchIndexName) {
-        return hibernateSearchIndexName;
+        return hibernateSearchIndexName+ "-read";
     }
 
     @Override
@@ -32,6 +32,6 @@ public class CustomLayoutStrategy implements IndexLayoutStrategy {
     @Override
     public String extractUniqueKeyFromElasticsearchIndexName(
             String elasticsearchIndexName) {
-        return "tbl_employee";
+        return elasticsearchIndexName;
     }
 }
